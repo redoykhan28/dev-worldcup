@@ -1,0 +1,508 @@
+/* importing google font  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&family=Oswald&family=Poppins:ital,wght@0,400;0,500;1,400&family=Supermercado+One&display=swap');
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* main section  */
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section-1 start  */
+
+.container {
+
+    width: 80%;
+    background-color: #77BAD2;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+
+
+.hero-section {
+
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.hero-heading {
+
+    width: 40%;
+    margin-top: 70px;
+}
+
+.hero-heading h1 {
+
+    font-size: 50px;
+    font-weight: 700px;
+    color: white;
+    margin: -1px 0;
+}
+
+.hero-heading p {
+
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-heading a {
+
+    text-decoration: none;
+    color: black;
+    padding: 16px 25px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.hero-img {
+
+    width: 50%;
+
+}
+
+.hero-img img {
+
+    width: 90%;
+
+
+}
+
+/* section 2 start  */
+
+.container2 {
+
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.players-blog {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.short-nav {
+
+    width: 200px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    background-color: #77BAD2;
+    padding: 30px;
+    margin: 0 30px 0 0;
+    border-radius: 10px;
+
+}
+
+.nav-btn {
+
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.nav-btn:hover {
+
+    text-decoration: none;
+    background-color: #D5FEFC;
+    border: 1px solid #D5FEFC;
+
+}
+
+.nav-btn a {
+
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#nav-sp-btn {
+
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0;
+
+}
+
+#nav-sp-btn a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+.players-cards {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cards {
+
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+}
+
+.cards img {
+
+    width: 100%;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+
+.cards a {
+
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.cards h4 {
+
+    margin: 30px 20px;
+}
+
+.social-info {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.social-info p {
+
+    margin-top: -3px;
+}
+
+/* footer section starts */
+
+footer {
+
+    background-color: #77BAD2;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-text {
+
+    color: white;
+}
+
+
+.horizontal-line {
+
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid white;
+
+}
+
+.footer-menu {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.footer-menu a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: small;
+    padding: 30px;
+}
+
+
+.social i {
+
+    color: white;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* responsive medium screen start  */
+
+@media screen and (min-width:577px) and (max-width:991px) {
+
+    .container {
+        width: 90%;
+        background-color: #77BAD2;
+        margin-top: 30px;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+
+
+    .hero-section {
+
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .hero-heading {
+
+        width: 50%;
+        margin-top: 40px;
+    }
+
+    .hero-heading h1 {
+
+        font-size: 30px;
+        font-weight: 700px;
+        color: white;
+        margin: -1px 0;
+    }
+
+
+    .hero-img {
+
+        width: 50%;
+
+    }
+
+    .hero-img img {
+
+        width: 100%;
+
+
+    }
+
+    .container2 {
+
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 80px;
+    }
+
+    .players-blog {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .short-nav {
+
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        width: 100%;
+        height: 75px;
+        margin: 10px 0px;
+        border-radius: 10px;
+    }
+
+    .nav-btn {
+
+
+        text-align: center;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px;
+
+    }
+
+
+
+
+    #nav-sp-btn {
+
+
+        text-align: center;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px;
+
+    }
+
+
+    .players-cards {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .cards {
+
+        width: 100%;
+    }
+
+
+
+    .footer-menu {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+
+}
+
+/* respomsive for mobile screen  */
+
+@media screen and (max-width:576px) {
+
+    .container {
+
+        width: 90%;
+        padding: 10px;
+        margin-top: 30px;
+        border-radius: 30px;
+        margin-bottom: 10px
+    }
+
+    .hero-section {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .hero-heading {
+
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .hero-heading h1 {
+
+        font-size: 25px;
+        font-weight: 700px;
+        color: white;
+        margin: -1px 0;
+    }
+
+    .hero-img {
+
+        width: 100%;
+        margin-top: 40px;
+
+    }
+
+    .hero-img img {
+
+        width: 100%;
+    }
+
+
+    .container2 {
+
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .players-blog {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .short-nav {
+
+        width: 200px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 30px;
+        margin: 0;
+        border-radius: 10px;
+
+    }
+
+    .nav-btn {
+
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+
+    .players-cards {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .cards {
+
+        width: 100%;
+    }
+
+
+    .footer-menu {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+
+    }
+
+    .footer-menu a {
+
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: small;
+        padding: 15px;
+    }
+
+}
