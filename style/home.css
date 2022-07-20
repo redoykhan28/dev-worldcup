@@ -67,6 +67,19 @@ main {
     border-radius: 3px;
 }
 
+.side-arrow {
+
+    transition: transform 0.5s ease-in;
+
+}
+
+.anim-btn:hover .side-arrow {
+
+    transform: translateX(10px);
+}
+
+
+
 .hero-img {
 
     width: 50%;
@@ -76,16 +89,23 @@ main {
 .hero-img img {
 
     width: 90%;
-
+    transition: transform 1s ease-out;
 
 }
 
-/* section 2 start  */
+.hero-img:hover img {
+
+    transform: translateX(30px);
+
+}
+
+/* Section-1 Ends  */
+
+/* section-2 start  */
 
 .container2 {
 
     width: 80%;
-    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -171,6 +191,13 @@ main {
     width: 280px;
     border-radius: 10px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s linear;
+
+}
+
+.cards:hover {
+
+    box-shadow: 0px 0px 26px 5px rgba(0, 0, 0, 0.37);
 
 }
 
@@ -195,9 +222,20 @@ main {
     border-radius: 5px;
 }
 
+.cards a:hover {
+
+    background-color: #77BAD2;
+    border: 2px solid #77BAD2;
+}
+
 .cards h4 {
 
     margin: 30px 20px;
+}
+
+.cards h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .social-info {
@@ -211,6 +249,36 @@ main {
 
     margin-top: -3px;
 }
+
+.spacial-button {
+
+    margin-top: 80px;
+    text-align: center;
+    display: none;
+}
+
+
+.spacial-button a {
+
+    text-decoration: none;
+    color: white;
+    padding: 16px 25px;
+    background-color: black;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.spacial-button a:hover {
+
+    text-decoration: none;
+    color: white;
+    padding: 16px 25px;
+    background-color: #77BAD2;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+/* Section-2 Ends  */
 
 /* footer section starts */
 
@@ -231,7 +299,6 @@ footer {
 
     width: 80%;
     margin: 0 auto;
-    border: 1px solid white;
 
 }
 
@@ -250,6 +317,12 @@ footer {
     font-weight: 500;
     font-size: small;
     padding: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-menu a:hover {
+
+    transform: scale(1.2);
 }
 
 
@@ -262,9 +335,22 @@ footer {
     margin: 5px;
 }
 
-/* responsive medium screen start  */
+.social i:hover {
+
+    opacity: 0.7;
+}
+
+
+/* footer Ends  */
+
+
+
+
+/* responsive Screen for medium screen ----------------------------------------------------------------------  */
 
 @media screen and (min-width:577px) and (max-width:991px) {
+
+    /* Section-1 start  */
 
     .container {
         width: 90%;
@@ -310,6 +396,10 @@ footer {
 
     }
 
+    /* Section-1 Ends  */
+
+    /* Section-2 start  */
+
     .container2 {
 
         width: 90%;
@@ -347,9 +437,6 @@ footer {
 
     }
 
-
-
-
     #nav-sp-btn {
 
 
@@ -374,7 +461,21 @@ footer {
         width: 100%;
     }
 
+    .sp-card {
 
+        display: none;
+    }
+
+    .spacial-button {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    /* Section-2 Ends  */
+
+    /* footer start  */
 
     .footer-menu {
 
@@ -385,11 +486,17 @@ footer {
 
     }
 
+    /* footer ends  */
+
 }
 
-/* respomsive for mobile screen  */
+
+
+/* responsive for mobile screen----------------------------------------------------------------------------  */
 
 @media screen and (max-width:576px) {
+
+    /* Section-1 start  */
 
     .container {
 
@@ -417,7 +524,7 @@ footer {
 
     .hero-heading h1 {
 
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 700px;
         color: white;
         margin: -1px 0;
@@ -427,7 +534,6 @@ footer {
 
         width: 100%;
         margin-top: 40px;
-
     }
 
     .hero-img img {
@@ -435,6 +541,11 @@ footer {
         width: 100%;
     }
 
+
+    /* Section-1 Ends  */
+
+
+    /* Section-2 start  */
 
     .container2 {
 
@@ -486,6 +597,10 @@ footer {
         width: 100%;
     }
 
+    /* Section-2 Ends  */
+
+
+    /* footer start  */
 
     .footer-menu {
 
@@ -504,5 +619,7 @@ footer {
         font-size: small;
         padding: 15px;
     }
+
+    /* footer ends  */
 
 }
